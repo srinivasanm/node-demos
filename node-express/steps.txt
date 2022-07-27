@@ -1,0 +1,10 @@
+mkdir node-express
+cd node-express
+>> npm init
+this will create package.json
+>> npm install express 
+adds express in package.json dependencies
+
+create app.js with express routes and listen
+
+>> node app.js
