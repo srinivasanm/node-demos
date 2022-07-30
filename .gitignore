@@ -1,7 +1,12 @@
 
 *.classname0
 .vscode/settings.json
-node-express/.vscode/launch.json
 .vscode/launch.json
-package-lock.json
+
+node-express/.vscode/launch.json
+node-express/package-lock.json
 node-express/node_modules
+
+votting-app-v1/.vscode/launch.json
+votting-app-v1/package-lock.json
+votting-app-v1/node_modules
