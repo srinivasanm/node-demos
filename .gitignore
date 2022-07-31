@@ -10,3 +10,4 @@ node-express/node_modules
 votting-app-v1/.vscode/launch.json
 votting-app-v1/package-lock.json
 votting-app-v1/node_modules
+votting-app-v1/data

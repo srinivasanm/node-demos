@@ -19,49 +19,62 @@ export const userVoteDetails = writable([{name:"admin",votedPost:[]}]);
 export const votesByPostNCand = writable([])
 
 export const posts = [
-    {id:"pr",name:"President"},
-    {id:"pm",name:"Prime minister"},
-    {id:"gvr",name:"Governor"},
-    {id:"vp",name:"Vice President"},
-    {id:"dpm",name:"Deputy Prime minister"},
-    {id:"lg",name:"Lieutenant Governor"}] ;
+    {id:"hb",name:"Head Boy"},
+    {id:"hg",name:"Head Girl"},
+    {id:"jhb",name:"Junior Head Boy"},
+    {id:"jhg",name:"Junior Head Girl"},
+    {id:"dhb",name:"Deputy Head Boy"},
+    {id:"dhg",name:"Deputy Head Girl"},
+    {id:"scb",name:"Sports Captain Boy"},
+    {id:"scg",name:"Sports Captain Girl"},
 
+    {id:"hc",name:"House Captains"},
+    {id:"dhc",name:"Deputy House Captains"},
+    {id:"pfs",name:"Perfects"},
+    {id:"dpfs",name:"Deputy Perfects"},
+    {id:"pfst",name:"Perfects of Transport"}
+    ] ;
+const image_base_url = "/images/bvk/"
 export let posts_candidates = [
-    {"id":"vp",candidates:[
-        {id:1,name:"Hari Karthee",img_src: "/images/class9/harikarthee.jpg"},
-        {id:2,name:"Akilan",img_src:"/images/class9/akilan.jpg"},
-        {id:3,name:"Akshayamathi",img_src:"/images/class9/akshyamathi.jpg"}]
+    {"id":"hb",candidates:[
+        {id:1,name:"Mithul Pranav",img_src: image_base_url+"hb/mithul.jpg"},
+        {id:2,name:"Akif",img_src:image_base_url+"hb/akif.jpg"}]
     },
-    {"id":"dpm",candidates:[
-        {id:2,name:"Jai Hareesh",img_src:"/images/class9/jaihareesh.jpg"},
-        {id:3,name:"Nitesh",img_src:"/images/class9/nitesh.jpg"},
-        {id:3,name:"Pavan",img_src:"/images/class9/pavan.jpg"}]
+    {"id":"hg",candidates:[
+        {id:1,name:"Prathiksha",img_src:image_base_url+"hg/prathiksha.jpg"},
+        {id:2,name:"Sakthi Devi",img_src:image_base_url+"hg/sakthidevi.jpg"}]
     },
-    {"id":"lg",candidates:[
-        {id:1,name:"Prajith Karthick",img_src: "/images/class9/prajithkarthick.jpg"},
-        {id:2,name:"Deepita",img_src:"/images/class9/deepita.jpg"},
-        {id:3,name:"Shreenika",img_src:"/images/class9/shreenika.jpg"}
+    {"id":"jhb",candidates:[
+        {id:1,name:"Siveshnath",img_src: image_base_url+"jhb/prajithkarthick.jpg"},
+        {id:2,name:"Dharaneesh",img_src:image_base_url+"jhb/Dharaneesh.jpg"}
     ]
-    },	{"id":"pr",candidates:[
-        {id:1,name:"Vibudharsan",img_src: "/images/class11/vibhudharsan.jpg"},
-        {id:2,name:"Jishnu",img_src:"/images/class11/jishnu.jpg"},
-        {id:3,name:"Nandhini",img_src:"/images/class11/nandhini.jpg"},
-        {id:4,name:"Akilesh",img_src:"/images/class11/agilesh.jpg"}]
+    },	{"id":"jhg",candidates:[
+        {id:1,name:"Lydia Florence",img_src: image_base_url+"jhg/lydiaflorence.jpg"},
+        {id:2,name:"Shrisubanithi",img_src:image_base_url+"jhg/shrisubanithi.jpg"},
+        {id:3,name:"Thanunitha",img_src:image_base_url+"jhg/thanunitha.jpg"}]
     },
-    {"id":"pm",candidates:[
-        {id:1,name:"Sameeksha",img_src: "/images/class11/sameeksha.jpg"},
-        {id:2,name:"Ranjit",img_src:"/images/class11/ranjit.jpg"},
-        {id:3,name:"Thakshitha",img_src:"/images/class11/thakshitha.jpg"},
-        {id:4,name:"Madhumitha",img_src:"/images/class11/madhumitha.jpg"}]
+    {"id":"dhb",candidates:[
+        {id:1,name:"Harshan Krishna",img_src:  image_base_url+"dhb/harshankrishna.jpg"},
+        {id:2,name:"Raagav",img_src:image_base_url+"dhb/raagav.jpg"}]
     },
-    {"id":"gvr",candidates:[
-        {id:1,name:"Abinithi",img_src: "/images/class11/abhinithi.jpg"},
-        {id:2,name:"Deepika",img_src:"/images/class11/deepika.jpg"},
-        {id:3,name:"Swathi",img_src:"/images/class11/swathi.jpg"},
-        {id:4,name:"Vikasini",img_src:"/images/class11/vikasini.jpg"}
+    {"id":"dhg",candidates:[
+        {id:1,name:"Amaani",img_src: image_base_url+"dhg/amaani.jpg"},
+        {id:2,name:"Tharuna",img_src:image_base_url+"dhg/tharuna.jpg"}
     ]
     }
-
+    ,
+    {"id":"scb",candidates:[
+        {id:1,name:"Dev Adharshan",img_src: image_base_url+"scb/devadharshan.jpg"},
+        {id:2,name:"Tharanidharan",img_src:image_base_url+"scb/tharanidharan.jpg"}
+    ]
+    }
+    ,
+    {"id":"scg",candidates:[
+        {id:1,name:"Shifa Fathima",img_src: image_base_url+"scg/shifafathima.jpg"},
+        {id:2,name:"Rithu Varshini",img_src:image_base_url+"scg/rithuvarshini.jpg"},
+        {id:3,name:"Birundha",img_src:image_base_url+"scg/birundha.jpg"}
+    ]
+    }
 ];
 
 
